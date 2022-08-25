@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap');
+body {
+    background-color:rgb(201, 54, 201);
+  }
+  
+.navbar{
+    height: 45px;
+    background-color: rgb(97, 21, 97);
+}
+.gameContainer{
+    display: flex;
+    justify-content: center;
+    margin-top: 18px;
+}
+.gameInfo{
+    text-align: center;
+    padding: 1%;
+}
+.welcome-msg{
+    font-family: 'Silkscreen', cursive;
+    color: rgb(11, 87, 11);
+    font-size: 65px;
+}
+.turnInfo{
+    font-family: 'Silkscreen', cursive;
+    font-size: 30px;
+}
+.gameBox{
+    display: grid;
+    grid-template-columns: repeat(3,10vw);
+    grid-template-rows: repeat(3,10vw);
+    font-size: 6vw;
+    text-align: center;
+    margin-right: 14px;
+}
+.box{
+    border: 1px solid black;
+}
+.box:hover{
+    background-color: rgb(184, 139, 227);
+    cursor: pointer;
+}
+.btn-reset{
+    text-align: center;
+}
+.winImg{
+    width: 0;
+    transition: width 1s ease-in-out;
+}
+.b0-r{
+    border-right: 0;
+}
+.b0-l{
+    border-left: 0;
+}
+.b0-t{
+    border-top: 0;
+}
+.b0-b{
+    border-bottom: 0;
+}
+#reset {
+    background-color: rgb(171, 237, 39);
+    border-radius: 2px;
+    width: 75px;
+    height: 34px;
+    margin: 30px;
+}
+@media screen and (max-width: 950px)
+{
+    .welcome-msg {
+        font-size: 30px;
+    }
+    #reset {
+        height: 35px;
+    }
+    .gameBox{
+        display: grid;
+        grid-template-columns: repeat(3,25vw);
+        grid-template-rows: repeat(3,25vw);
+        font-size: 6vw;
+        text-align: center;
+        margin-right: 14px;
+    }
+}
